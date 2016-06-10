@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Photo</string>
+    <string name="take_picture">Picture</string>
+    <string name="start_record">Start</string>
+    <string name="stop_record">Stop</string>
+    <string name="start">Приложение запущено!</string>
+    <string name="last">Время последней загрузки файла:</string>
+</resources>

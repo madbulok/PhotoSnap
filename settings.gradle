@@ -1,0 +1,1 @@
+include ':app', ':httpmime-4.2.4', ':httpclient-4.5.1', ':apache-httpcomponents-httpcore', ':dropbox-android-sdk-1.6.3', ':json_simple-1.1'
