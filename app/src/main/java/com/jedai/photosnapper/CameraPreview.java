@@ -192,5 +192,6 @@ public class CameraPreview extends Activity {
         if (camera != null)
             camera.release();
         camera = null;
+        takePhoto.removeCallbacksAndMessages(null);
     }
 }
