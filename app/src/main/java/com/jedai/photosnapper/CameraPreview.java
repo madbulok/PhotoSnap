@@ -53,13 +53,12 @@ public class CameraPreview extends Activity {
         surfaceView = (SurfaceView) findViewById(R.id.surfaceView);
         textView = (TextView) findViewById(R.id.text);
         time_show = (TextView) findViewById(R.id.timer);
-
+        camera = Camera.open();
+        camera.startPreview();
         AppKeyPair appKeys = new AppKeyPair(APP_KEY, APP_SECRET);
         AndroidAuthSession session = new AndroidAuthSession(appKeys);
         dropboxApi = new DropboxAPI<AndroidAuthSession>(session);
         dropboxApi.getSession().startOAuth2Authentication(CameraPreview.this);
-
-        camera = Camera.open();
 
         dir = Environment
                     .getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
@@ -137,7 +136,9 @@ public class CameraPreview extends Activity {
 
     public void takePicture () {
         try {
-            camera.startPreview();
+            if (camera == null){
+                camera.startPreview();
+            }
         }catch (NullPointerException e ){
             e.printStackTrace();
             Toast camera = Toast.makeText(getApplicationContext(), "Камера не найдена!", Toast.LENGTH_LONG);
@@ -158,8 +159,9 @@ public class CameraPreview extends Activity {
                     fos.write(data);
                     fos.close();
 
-                    //new UploadPhoto(getApplicationContext(), dropboxApi, name, photoFile).execute();
-                    new DownloadPhoto(getApplicationContext(), photoFile).execute();
+                    new UploadPhoto(getApplicationContext(), dropboxApi, name, photoFile).execute();
+                    //new DownloadPhoto(getApplicationContext(), photoFile).execute();
+
                 }catch (FileNotFoundException e){
                     Toast toast = Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG);
                     toast.show();

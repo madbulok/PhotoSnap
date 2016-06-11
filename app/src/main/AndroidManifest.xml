@@ -17,13 +17,15 @@
         tools:overrideLibrary="android.support.v7.appcompat">
 
         <activity android:name=".DropBoxActivity"></activity>
-        <activity android:name="test.CamAct"></activity>
-
-        <activity android:name=".CameraPreview">
+        <activity android:name="test.CamAct">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+
+        <activity android:name=".CameraPreview">
         </activity>
 
         <activity android:name="com.dropbox.client2.android.AuthActivity"

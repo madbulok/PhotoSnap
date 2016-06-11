@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PhotoSnapper.iml" filepath="$PROJECT_DIR$/PhotoSnapper.iml" />
       <module fileurl="file://$PROJECT_DIR$/apache-httpcomponents-httpcore/apache-httpcomponents-httpcore.iml" filepath="$PROJECT_DIR$/apache-httpcomponents-httpcore/apache-httpcomponents-httpcore.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apps.iml" filepath="$PROJECT_DIR$/apps.iml" />
       <module fileurl="file://$PROJECT_DIR$/dropbox-android-sdk-1.6.3/dropbox-android-sdk-1.6.3.iml" filepath="$PROJECT_DIR$/dropbox-android-sdk-1.6.3/dropbox-android-sdk-1.6.3.iml" />
       <module fileurl="file://$PROJECT_DIR$/httpclient-4.5.1/httpclient-4.5.1.iml" filepath="$PROJECT_DIR$/httpclient-4.5.1/httpclient-4.5.1.iml" />
       <module fileurl="file://$PROJECT_DIR$/httpmime-4.2.4/httpmime-4.2.4.iml" filepath="$PROJECT_DIR$/httpmime-4.2.4/httpmime-4.2.4.iml" />

@@ -80,7 +80,7 @@ public class DownloadPhoto extends AsyncTask<String, Void, String>{
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
         //CameraPreview.textView.setText("Последняя загрузка - " + file.getName());
-        Toast toast = Toast.makeText(context, "DAA!", Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(context, "UPLOAD!!", Toast.LENGTH_LONG);
         toast.show();
     }
 }
